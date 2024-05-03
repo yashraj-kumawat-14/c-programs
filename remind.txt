@@ -1,0 +1,27 @@
+1. The range of both int and float depends on the machine you are using.
+
+2. the main function is the entry point of every program.
+
+3. the main function takes no arguments.
+
+4. Its first argument is a string of characters to be printed, with each % indicating where one of the other (second, third, ...) arguments is to be substituted, and in what form itis to be printed. For instance, %d specifies an integer argument, so the statement : printf("%d\t%d\n", fahr, celsius); causes the values of the two integers fahr and celsius to be printed, with a tab (\t) between them.Each % construction in the first argument of printf is paired with the corresponding second argument, thirdargument, etc.; they must match up properly by number and type, or you will get wrong answers. 
+
+5. By the way, printf is not part of the C language; there is no input or output defined in C itself. printf is just a useful function from the standard library of functions that are normally accessible to C programs. The behaviour of printf is defined in the ANSI standard, however, so its properties should be the same with any compiler and library that conforms to the standard
+
+6. if we augment each %d in the printf statement with a width, the numbers printed will be right-justified in their fields. For instance, printf("%0d%dp\n", 4, 6); printf("%1d%dp\n", 4, 6); printf("%2d%dp\n", 4, 6); printf("%0d%dp\n", 44, 6); printf("%1d%dp\n", 44, 6); printf("%2d%dp\n", 44, 6); printf("%3d%dp\n", 44, 6);
+
+7. printf("%d", 5/4) will result in 1 because %d removes the decimal part from the corresponding expression.
+
+8. If an arithmetic operator has integer operands, an integer operation is performed. If an arithmetic operator has one
+floating-point operand and one integer operand, however, the integer will be converted to floating point before the
+operation is done.
+
+9. The printf conversion specification %3.0f says that a floating-point number (here fahr) is to be printed at least three characters wide, with no decimal point and no fraction digits. %6.1f describes another number (celsius) that is to be printed at least six characters wide, with 1 digit after the decimal point . Width and precision may be omitted from a specification: %6f says that the number is to be at least six characters wide; %.2f specifies two characters after the decimal point, but the width is not constrained; and %f merely says to print the number as floating point.
+
+10. Among others, printf also recognizes %o for octal, %x for hexadecimal, %c for character, %s for character string and %% for itself.
+
+11. for loop : initialization;conditon;increment all three can be any expression.
+
+12. comments are written in /* your comments */ there can only be multiline comments in c programming language.
+
+13. #define START 3 | symbolic constants, not variables, so they do not appear in declarations. Symbolic constant names are conventionally written in upper case so they can ber readily distinguished from lower case variable names. Notice that there is no semicolon at the end of a #define line
