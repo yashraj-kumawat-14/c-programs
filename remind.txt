@@ -25,3 +25,7 @@ operation is done.
 12. comments are written in /* your comments */ there can only be multiline comments in c programming language.
 
 13. #define START 3 | symbolic constants, not variables, so they do not appear in declarations. Symbolic constant names are conventionally written in upper case so they can ber readily distinguished from lower case variable names. Notice that there is no semicolon at the end of a #define line
+
+14.for loop can be ended with ; if there no body or statements to be executed, since all work can be executed by 3 expression in for loop
+
+15. character written within single quotes represents integeral value equal to numeric value in character set.
